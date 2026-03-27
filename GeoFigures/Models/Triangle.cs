@@ -11,9 +11,16 @@ namespace GeoFigures.Models
             Width = width;
         }
 
-        public double GetArea()
+        public double GetArea() // for 90 deg triangle
         {
             double result = (double)Height * Width / 2;
+            return Math.Round(result, 2, MidpointRounding.AwayFromZero);
+        }
+
+        public double GetPerimeter() // for 90 deg triangle
+        {
+            double thirdSide = Math.Pow(Height, 2) + Math.Pow(Width, 2);
+            double result = Width + Height + Math.Sqrt(thirdSide);
             return Math.Round(result, 2, MidpointRounding.AwayFromZero);
         }
     }

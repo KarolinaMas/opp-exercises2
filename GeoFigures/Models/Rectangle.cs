@@ -33,5 +33,10 @@ namespace GeoFigures.Models
         {
             return Height * Width;
         }
+
+        public int GetPerimeter()
+        {
+            return Height * 2 + Width * 2;
+        }
     }
 }
