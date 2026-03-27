@@ -8,5 +8,11 @@ namespace GeoFigures.Models
         {
             Radius = radius;
         }
+
+        public double GetArea()
+        {
+            double result = Math.PI * Math.Pow(Radius, 2);
+            return Math.Round(result, 2, MidpointRounding.AwayFromZero);
+        }
     }
 }

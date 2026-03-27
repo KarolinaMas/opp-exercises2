@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using GeoFigures.Models;
+
+var circle = new Circle(3);
+
+var triangle = new Triangle(9, 9);
+
+var rect = new Rectangle(10, 5);
+
+Console.WriteLine(rect.GetArea());
+Console.WriteLine(circle.GetArea());
+Console.WriteLine(triangle.GetArea());

@@ -10,5 +10,11 @@ namespace GeoFigures.Models
             Height = heigth;
             Width = width;
         }
+
+        public double GetArea()
+        {
+            double result = (double)Height * Width / 2;
+            return Math.Round(result, 2, MidpointRounding.AwayFromZero);
+        }
     }
 }
