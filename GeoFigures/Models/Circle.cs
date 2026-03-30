@@ -4,6 +4,8 @@ namespace GeoFigures.Models
     {
         public double Radius { get; set; }
 
+        public Circle() { }
+
         public Circle(double radius)
         {
             Radius = radius;

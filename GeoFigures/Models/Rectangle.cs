@@ -23,6 +23,8 @@ namespace GeoFigures.Models
             }
         }
 
+        public Rectangle() { }
+
         public Rectangle(int height, int width)
         {
             Height = height;

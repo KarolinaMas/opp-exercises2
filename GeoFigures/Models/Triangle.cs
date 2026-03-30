@@ -5,6 +5,8 @@ namespace GeoFigures.Models
         public int Height { get; set; }
         public int Width { get; set; }
 
+        public Triangle() { }
+
         public Triangle(int heigth, int width)
         {
             Height = heigth;
