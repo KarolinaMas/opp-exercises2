@@ -1,6 +1,6 @@
 namespace GeoFigures.Models
 {
-    internal class Triangle
+    internal class Triangle : Shape
     {
         public int Height { get; set; }
         public int Width { get; set; }
@@ -13,13 +13,13 @@ namespace GeoFigures.Models
             Width = width;
         }
 
-        public double GetArea() // for 90 deg triangle
+        public override double GetArea() // for 90 deg triangle
         {
             double result = (double)Height * Width / 2;
             return Math.Round(result, 2, MidpointRounding.AwayFromZero);
         }
 
-        public double GetPerimeter() // for 90 deg triangle
+        public override double GetPerimeter() // for 90 deg triangle
         {
             double thirdSide = Math.Pow(Height, 2) + Math.Pow(Width, 2);
             double result = Width + Height + Math.Sqrt(thirdSide);

@@ -1,6 +1,6 @@
 namespace GeoFigures.Models
 {
-    internal class Circle
+    internal class Circle : Shape
     {
         public double Radius { get; set; }
 
@@ -11,13 +11,13 @@ namespace GeoFigures.Models
             Radius = radius;
         }
 
-        public double GetArea()
+        public override double GetArea()
         {
             double result = Math.PI * Math.Pow(Radius, 2);
             return Math.Round(result, 2, MidpointRounding.AwayFromZero);
         }
 
-        public double GetPerimeter()
+        public override double GetPerimeter()
         {
             double result = Radius * 2 * Math.PI;
             return Math.Round(result, 2, MidpointRounding.AwayFromZero);

@@ -1,6 +1,6 @@
 namespace GeoFigures.Models
 {
-    internal class Rectangle
+    internal class Rectangle : Shape
     {
         private int _height;
         private int _width;
@@ -31,12 +31,12 @@ namespace GeoFigures.Models
             Width = width;
         }
 
-        public int GetArea()
+        public override double GetArea()
         {
             return Height * Width;
         }
 
-        public int GetPerimeter()
+        public override double GetPerimeter()
         {
             return Height * 2 + Width * 2;
         }
