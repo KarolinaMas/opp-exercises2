@@ -26,3 +26,9 @@ var shapeList = new List<Shape>()
     new Circle(7),
     new Rectangle(2, 7),
 };
+
+double totalArea = ShapeHelper.CalculateArea(shapeList);
+double totalPerimeter = ShapeHelper.CalculatePerimeter(shapeList);
+
+Console.WriteLine(totalArea);
+Console.WriteLine(totalPerimeter);
